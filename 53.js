@@ -22,10 +22,10 @@ var maxSubArray = function (nums) {
   return max;
 };
 
-nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+// nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 
 
-// 方法二
+// 方法二 判断下一个数字是否加入前子序列，可以判断下一个值是否大于前子序列之和
 var maxSubArray = function (nums) {
   let pre = 0, maxAns = nums[0];
   console.log(`pre: ${pre}, maxAns: ${maxAns}`)
